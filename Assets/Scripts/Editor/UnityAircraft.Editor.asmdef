@@ -1,0 +1,19 @@
+{
+    "name": "UnityAircraft.Editor",
+    "rootNamespace": "UnityAircraft.Editor",
+    "references": [
+        "GUID:16e38bc16ef38fa48921203702f18505",
+        "GUID:115be08a3c047914c9d2d9e1cf262724"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
