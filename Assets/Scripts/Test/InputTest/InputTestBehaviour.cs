@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using R3;
 using TMPro;
 using UnityAircraft.Game.Attribute;
+using UnityAircraft.Game.Extensions;
 using UnityEngine;
 
 namespace UnityAircraft.Test.InputTest
@@ -69,7 +70,8 @@ namespace UnityAircraft.Test.InputTest
 
         private async UniTask HideLaunchAsync(TimeSpan delay, CancellationToken cancellation)
         {
-            await UniTask.Delay(delay, cancellationToken: cancellation);
+            var linkedToken = destroyCancellationToken.LinkWith(cancellation);
+            await UniTask.Delay(delay, cancellationToken: linkedToken);
             _launchText.enabled = false;
         }
     }
