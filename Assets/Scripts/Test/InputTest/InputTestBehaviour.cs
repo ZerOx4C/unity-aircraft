@@ -5,6 +5,7 @@ using R3;
 using TMPro;
 using UnityAircraft.Game.Attribute;
 using UnityAircraft.Game.Extensions;
+using UnityAircraft.Test.Utility;
 using UnityEngine;
 
 namespace UnityAircraft.Test.InputTest
@@ -28,11 +29,7 @@ namespace UnityAircraft.Test.InputTest
 
         private void Update()
         {
-            if (_reset)
-            {
-                _model.rotation = Quaternion.identity;
-                _reset = false;
-            }
+            TestUtility.DoOnce(ref _reset, () => _model.rotation = Quaternion.identity);
 
             _model.Rotate(Vector3.right, _pitch);
             _model.Rotate(Vector3.forward, _roll);
