@@ -8,11 +8,13 @@ namespace UnityAircraft.Game.Attribute
     [AttributeUsage(AttributeTargets.Field)]
     public class ButtonAttribute : PropertyAttribute
     {
-        public ButtonAttribute(string title = null)
+        public ButtonAttribute(string title = null, bool showValueByColor = false)
         {
             Title = title;
+            ShowValueByColor = showValueByColor;
         }
 
         public string Title { get; }
+        public bool ShowValueByColor { get; }
     }
 }

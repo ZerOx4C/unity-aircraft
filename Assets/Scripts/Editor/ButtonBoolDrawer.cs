@@ -20,7 +20,11 @@ namespace UnityAircraft.Editor
 
             using (new GUIDisposable())
             {
-                GUI.backgroundColor = property.boolValue ? Color.green : Color.red;
+                if (buttonAttribute.ShowValueByColor)
+                {
+                    GUI.backgroundColor = property.boolValue ? Color.green : Color.red;
+                }
+
                 if (GUI.Button(position, title))
                 {
                     property.boolValue = !property.boolValue;
