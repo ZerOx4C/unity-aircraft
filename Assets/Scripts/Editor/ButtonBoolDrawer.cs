@@ -1,4 +1,4 @@
-using UnityAircraft.Game.Attribute;
+using UnityAircraft.Game;
 using UnityEditor;
 using UnityEngine;
 

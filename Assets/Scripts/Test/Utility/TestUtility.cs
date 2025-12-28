@@ -1,6 +1,6 @@
 using System;
 
-namespace UnityAircraft.Test.Utility
+namespace UnityAircraft.Test
 {
     public static class TestUtility
     {

@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Threading;
 
-namespace UnityAircraft.Game.Extensions
+namespace UnityAircraft.Game
 {
     public static class CancellationTokenExtensions
     {

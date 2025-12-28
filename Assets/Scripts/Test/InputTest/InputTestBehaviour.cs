@@ -3,12 +3,10 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using R3;
 using TMPro;
-using UnityAircraft.Game.Attribute;
-using UnityAircraft.Game.Extensions;
-using UnityAircraft.Test.Utility;
+using UnityAircraft.Game;
 using UnityEngine;
 
-namespace UnityAircraft.Test.InputTest
+namespace UnityAircraft.Test
 {
     public class InputTestBehaviour : MonoBehaviour
     {

@@ -1,9 +1,7 @@
-using UnityAircraft.Game.Attribute;
-using UnityAircraft.Game.Movement;
-using UnityAircraft.Test.Utility;
+using UnityAircraft.Game;
 using UnityEngine;
 
-namespace UnityAircraft.Test.MovementTest
+namespace UnityAircraft.Test
 {
     public class MovementTestBehaviour : MonoBehaviour
     {

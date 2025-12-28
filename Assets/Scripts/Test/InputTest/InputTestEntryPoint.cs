@@ -1,9 +1,9 @@
 using R3;
-using UnityAircraft.Game.Input;
+using UnityAircraft.Game;
 using VContainer;
 using VContainer.Unity;
 
-namespace UnityAircraft.Test.InputTest
+namespace UnityAircraft.Test
 {
     public class InputTestEntryPoint : IStartable
     {

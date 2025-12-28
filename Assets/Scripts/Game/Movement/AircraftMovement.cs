@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityAircraft.Game.Movement
+namespace UnityAircraft.Game
 {
     public class AircraftMovement : MonoBehaviour
     {

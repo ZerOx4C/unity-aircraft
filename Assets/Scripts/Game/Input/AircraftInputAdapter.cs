@@ -4,7 +4,7 @@ using UnityEngine.InputSystem.Controls;
 using VContainer;
 using VContainer.Unity;
 
-namespace UnityAircraft.Game.Input
+namespace UnityAircraft.Game
 {
     public class AircraftInputAdapter : IAircraftInputObservable, ITickable
     {

@@ -1,6 +1,6 @@
 using R3;
 
-namespace UnityAircraft.Game.Input
+namespace UnityAircraft.Game
 {
     public interface IAircraftInputObservable
     {
