@@ -45,8 +45,8 @@ namespace UnityAircraft.Game
 
             _rigidbody.AddForce(drag * -velocity.normalized, ForceMode.Acceleration);
             _rigidbody.AddForce(lift * up, ForceMode.Acceleration);
-            _rigidbody.angularVelocity = Mathf.Deg2Rad * pitchAngle * -right +
-                                         Mathf.Deg2Rad * rollAngle * -forward +
+            _rigidbody.angularVelocity = Mathf.Deg2Rad * pitchAngle * right +
+                                         Mathf.Deg2Rad * rollAngle * forward +
                                          Mathf.Deg2Rad * yawAngle * up;
             _rigidbody.AddForce(thrust * forward);
         }
